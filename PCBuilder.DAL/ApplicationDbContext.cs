@@ -13,7 +13,5 @@ namespace PCBuilder.DAL
         {
             Database.EnsureCreated();
         }
-
-
     }
 }

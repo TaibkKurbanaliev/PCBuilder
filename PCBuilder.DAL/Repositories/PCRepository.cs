@@ -10,6 +10,13 @@ namespace PCBuilder.DAL.Repositories
 {
     public class PCRepository : IPCRepository
     {
+        private readonly ApplicationDbContext _dbContext;
+
+        public PCRepository(ApplicationDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         public Task<bool> Create(PC entity)
         {
             throw new NotImplementedException();

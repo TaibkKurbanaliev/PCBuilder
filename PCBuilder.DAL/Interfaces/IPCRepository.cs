@@ -9,6 +9,5 @@ namespace PCBuilder.DAL.Interfaces
 {
     public interface IPCRepository : IBaseRepository<PC>
     {
-
     }
 }
