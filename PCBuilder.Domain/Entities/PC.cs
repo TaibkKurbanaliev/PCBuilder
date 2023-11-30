@@ -86,18 +86,18 @@ namespace PCBuilder.Domain.Entities
         public string _Storages { get; set; }
 
         [NotMapped]
-        public List<Component> Storages
+        public Component Storages
         {
-            get { return _Storages == null ? null : JsonSerializer.Deserialize<List<Component>>(_Storages); }
+            get { return _Storages == null ? null : JsonSerializer.Deserialize<Component>(_Storages); }
             set { _Storages = JsonSerializer.Serialize(value); }
         }
 
         public string _Fans { get; set; }
 
         [NotMapped]
-        public List<Component> Fans
+        public Component Fans
         {
-            get { return _Fans == null ? null : JsonSerializer.Deserialize<List<Component>>(_Fans); }
+            get { return _Fans == null ? null : JsonSerializer.Deserialize<Component>(_Fans); }
             set { _Fans = JsonSerializer.Serialize(value); }
         }
     }

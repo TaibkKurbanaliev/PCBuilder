@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+h2 {
+    margin-top: 100px;
+    color: #333;
+    text-align:  center;
+}
+.sum{
+    margin-top: 185px;
+}
+.form_container_flex{
+    display: flex;
+    justify-content: space-between;
+
+    column-gap: 20px;   
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-image: url('/img/nophoto.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.newPhoto{
+    width: 150px;
+    height: 100px;
+    border: 1px solid black;
+    background-image: url('/img/nophoto.jpg');
+    background-size: cover;
+    background-position: center;
+}
+form {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+@media screen and (min-width: 1920px) {
+    /* Ваш CSS-код для экранов с разрешением выше 1920 пикселей */
+    form {
+        width: 48%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media screen and (max-width: 1452px) {
+    /* Ваш CSS-код для экранов с разрешением ниже 1452 пикселей */
+    form {
+        width: 55%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }

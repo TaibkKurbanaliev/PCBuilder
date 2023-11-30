@@ -1,5 +1,6 @@
 ﻿using PCBuilder.DAL.Interfaces;
 using PCBuilder.Domain.Entities;
+using PCBuilder.DTO;
 using PCBuilder.Service.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -23,19 +24,34 @@ namespace PCBuilder.Service.Implementations
             await _repository.Delete(id);
         }
 
-        public async Task Create(PC pc)
+        public async Task Create(PCDto pc)
         {
+            var newPC = new PC()
+            {
+                Name = pc.Name,
+                Description = pc.Description,
+                Cost = pc.Cost,
+                CPU = pc.CPU,
+                GPU = pc.GPU,
+                MotherBoard = pc.MotherBoard,
+                DRAM = pc.DRAM,
+                PowerSupply = pc.PowerSupply,
+                Case = pc.Case,
+                PCColling = pc.PCColling,
+                Fans = pc.Fans
+            };
 
+            await _repository.Create(newPC);
         }
 
-        public Task<PC> Get(int id)
+        public async Task<PC> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _repository.Get(id);
         }
 
-        public Task<List<PC>> GetAll()
+        public async Task<IEnumerable<PC>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _repository.GetAll();
         }
 
         public Task Update(int id, string message)

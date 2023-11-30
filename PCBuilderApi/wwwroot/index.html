@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style/style.css"><!-- Подключаем общие стили -->
+    <link rel="stylesheet" href="style/form.css"> <!-- Подключаем стили для form -->
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="button">Click me!</button>
+
+
+
+    <!--Это шапка-->
+    <header>
+        <div class="wrap-logo">
+            <!-- контейнер лого -->
+            <a href="#logo" class="logo">Логотип сайта</a>  <!-- сам логотип -->
+        </div>
+        <nav>
+            <!-- Контейнер навигации-->
+            <a class="active" href="#home">Главная</a>
+            <a href="#contact">Контакты</a>
+            <a href="#about">О нас</a>
+        </nav>
+    </header>
+
+    <h2> Компьютер</h2>
+
+    <!--Форма-->
+    <form id="form" method="post">
+        <div class="form_flex">
+            <div class="form_container_flex">
+                <div class="photo">
+                </div>
+                <div class="form_container_input">
+                    <input type="text" id="Name" name="name" placeholder="Название" style="width: 100%;">
+                    <textarea rows="10" cols="45" id="Description" placeholder="Описание" resize="none" name="description"></textarea>
+                </div>
+                <div class="sum">
+                    <p>Сумма:</p>
+                </div>
+            </div>
+        </div>
+        <label for="CPU">CPU:</label><br>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+
+            <div class="form_container_input">
+                <input size="" type="text" id="titleCPU" name='CPU' placeholder="Название">
+                <input size="60%" type="text" id="linkCPU" name='CPU' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionCPU" name='CPU' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="GPU">GPU:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleGPU" name='GPU' placeholder="Название">
+                <input size="60%" type="text" id="linkGPU" name='GPU' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionGPU" name='GPU' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="MotherBoard">MotherBoard:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleMotherBoard" name='MotherBoard' placeholder="Название">
+                <input size="60%" type="text" id="linkMotherBoard" name='MotherBoard' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionMotherBoard" name='MotherBoard' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="DRAM">DRAM:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleDRAM" name='DRAM' placeholder="Название">
+                <input size="60%" type="text" id="linkDRAM" name='DRAM' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionDRAM" name='DRAM' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="PowerSupply">PowerSupply:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titlePowerSupply" name='PowerSupply' placeholder="Название">
+                <input size="60%" type="text" id="linkPowerSupply" name='PowerSupply' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionPowerSupply" name='PowerSupply' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="Case">Case:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleCase" name='Case' placeholder="Название">
+                <input size="60%" type="text" id="linkCase" name='Case' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionCase" name='Case' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="PCColing">PCColing:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titlePCColing" name='PCColing' placeholder="Название">
+                <input size="60%" type="text" id="linkPCColing" name='PCColing' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionPCColing" name='PCColing' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="Storages">Storages:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleStorages" name='Storages' placeholder="Название">
+                <input size="60%" type="text" id="linkStorages" name='Storages' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionStorages" name='Storages' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <label for="Fans">Fans:</label>
+        <div class="form_container_flex" style="margin-top: 10px;">
+            <div class="newPhoto">
+            </div>
+            <div class="form_container_input">
+                <input size="" type="text" id="titleFans" name='Fans' placeholder="Название">
+                <input size="60%" type="text" id="linkFans" name='Fans' placeholder="Ссылка">
+                <input size="60%" type="text" id="descriptionFans" name='Fans' placeholder="Описание">
+            </div>
+            <p>Цена:</p>
+        </div>
+        <input type="submit" id="button" value="Добавить">
+    </form>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>

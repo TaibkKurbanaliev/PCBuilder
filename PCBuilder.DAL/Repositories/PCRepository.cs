@@ -17,9 +17,11 @@ namespace PCBuilder.DAL.Repositories
             _dbContext = dbContext;
         }
 
-        public Task<bool> Create(PC entity)
+        public async Task<bool> Create(PC pc)
         {
-            throw new NotImplementedException();
+            await _dbContext.AddAsync(pc);
+
+            return await Save();
         }
 
         public Task<bool> Delete(int id)
@@ -42,9 +44,11 @@ namespace PCBuilder.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<bool> Save()
+        public async Task<bool> Save()
         {
-            throw new NotImplementedException();
+            var result = await _dbContext.SaveChangesAsync();
+
+            return result > 0;
         }
     }
 }
